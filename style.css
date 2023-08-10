@@ -156,11 +156,19 @@ ul {
   color: #494542;
 }
 
-#home .wrapper .img-home {
+/* #home .wrapper .img-home {
   background-image: url("./assets/images/image-home.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  height: 800px;
   background-position: center;
-  height: 100vh;
-  width: 100%;
+  margin-top: 5.5rem;
+} */
+
+
+#home .wrapper .img-home {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  left: 45px;
 }
