@@ -11,12 +11,13 @@
 
 :root {
   font-size: 62.5%;
-  --nav-heigth: 10rem;
+  --nav-heigth: 6rem;
 }
 
 body {
   font-size: 1.6rem;
-  background: url(<path-to-image>), #d3d3d3 50% / cover no-repeat;
+  background-color: #F4EEF7;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -115,7 +116,7 @@ ul {
   color: #494542;
   font-family: Inter;
   font-size: .8rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 #home .wrapper .content main h1 {
@@ -143,32 +144,172 @@ ul {
   padding: .9rem 3.3rem .9rem 3.4rem;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
-  border: 1px solid #494542;
+  background-color: #494542;
 }
 
-#home .wrapper .content button a {
+#home .wrapper .content button {
   font-family: Inter;
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  color: #494542;
+  color: #F4EEF7;
 }
 
-/* #home .wrapper .img-home {
-  background-image: url("./assets/images/image-home.png");
-  background-repeat: no-repeat;
-  height: 800px;
-  background-position: center;
-  margin-top: 5.5rem;
+/* @keyframes shake {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-5px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
 } */
 
+#home .wrapper .content button:active {
+  background-color: #6c5b57;
+  
+}
 
 #home .wrapper .img-home {
+  position: relative;
+  width: 100%; /* O tamanho do container pode ser ajustado conforme necessário */
+  height: 770px;
+  overflow: hidden;
+}
+
+#home .wrapper .img-home img {
+  position: absolute;
+  left: calc(50% - 275px); /* Deslocamento horizontal -275px (ajuste conforme necessário) */
+  height: auto; /* Mantém a proporção da imagem */
+  z-index: -10;
+}
+
+/* -------------------------------------------------------------------------------------- SERVICES ------------------------------------------------------------------------ */
+
+#services .wrapper .content {
+  padding: 0 2.5rem;
+}
+
+#services .wrapper .content header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#services .wrapper .content header h2 {
+  color: #494542;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#services .wrapper .content header h1 {
+  color: #494542;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 4rem;
+}
+
+#services .wrapper .cards {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2.5rem;
+}
+
+#services .wrapper .cards .card {
+  padding: 4rem 1.5rem;
+  background: #000;
+  margin-bottom: 4rem;
+}
+
+#services .wrapper .cards .card h1 {
+  color: #F4EEF7;
+  text-align: left;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 2rem;
+}
+
+#services .wrapper .cards .card p {
+  color: #F4EEF7;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+#services .wrapper .cards .card p span {
+  font-weight: 400;
+}
+
+#services .wrapper .button {
   display: flex;
   justify-content: center;
-  overflow: hidden;
-  position: relative;
-  left: 45px;
+  padding-bottom: 4rem;
+}
+
+#services .wrapper button {
+  padding: .9rem 1rem .9rem 1.1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #494542;
+}
+
+#services .wrapper button {
+  color: #494542;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+#services .wrapper button:active {
+  scale: 0.9;
+}
+
+
+/* ----------------------------------------------------------------------------- PORTIFOLIO ---------------------------------------------------------------------------------- */
+
+#portifolio .wrapper {
+  padding: 0 2.5rem;
+  background-color: #000;
+}
+
+#portifolio .wrapper header {
+  padding: 2.5rem 0 4rem 0;
+}
+
+#portifolio .wrapper header h2  {
+  color: #F4EEF7;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  padding-bottom: .5rem;
+}
+
+#portifolio .wrapper header h1 {
+  color: #F4EEF7;
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
