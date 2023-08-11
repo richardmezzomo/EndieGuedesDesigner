@@ -314,3 +314,69 @@ ul {
   line-height: normal;
 }
 
+#portifolio .wrapper .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+#portifolio .wrapper .cards .card img {
+  width: 100%;
+}
+
+#portifolio .wrapper .cards .card footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+#portifolio .wrapper .cards .card footer p {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+#portifolio .wrapper .cards .card span {
+  color: #FAFAFA;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+  padding-top: .5rem;
+}
+
+#portifolio .wrapper .button {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+#portifolio .wrapper button {
+  padding: 0.9rem 3.3rem 1.1rem 3.1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #F4EEF7;
+}
+
+#portifolio .wrapper button {
+  color: #F4EEF7;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+#portifolio .wrapper button:active {
+  scale: 0.9;
+}
