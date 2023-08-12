@@ -1,17 +1,19 @@
-const openButton = document.querySelector('.open-menu');
-const closeButton = document.querySelector('.menu-close');
-const menu = document.querySelector('.menu-navigation');
+const openMenuButton = document.querySelector('.open-menu');
+const menuNavigation = document.querySelector('.menu-navigation');
+const closeMenuButton = document.querySelector('.menu-close');
 
-
-openButton.addEventListener('click', () => {
-  menu.classList.add('open'); // Adiciona a classe 'open' para abrir o menu
+openMenuButton.addEventListener('click', () => {
+  openMenuButton.classList.toggle('open');
+  menuNavigation.classList.toggle('show');
+  menuNavigation.classList.toggle('open');
 });
 
-
-closeButton.addEventListener('click', () => {
-  menu.classList.remove('open'); // Remove a classe 'open' para fechar o menu
+closeMenuButton.addEventListener('click', () => {
+  openMenuButton.classList.remove('open');
+  menuNavigation.classList.remove('show');
 });
 
 function closeMenu() {
-  menu.classList.toggle('open'); // Fecha o menu quando um link é clicado
+  openMenuButton.classList.remove('open');
+  menuNavigation.classList.remove('open');
 }
