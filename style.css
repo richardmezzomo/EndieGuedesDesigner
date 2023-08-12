@@ -290,7 +290,7 @@ ul {
 }
 
 #portifolio .wrapper header {
-  padding: 2.5rem 0 4rem 0;
+  padding: 2.5rem 0 0 0;
 }
 
 #portifolio .wrapper header h2  {
@@ -315,17 +315,20 @@ ul {
 }
 
 #portifolio .wrapper .cards {
+  text-align: center;
+}
+
+#portifolio .wrapper .cards .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  justify-content: center;
+  padding-top: 4rem;
+ 
 }
 
-#portifolio .wrapper .cards .card img {
-  width: 100%;
-}
 
-#portifolio .wrapper .cards .card footer {
+#portifolio .wrapper .cards .card div {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -333,7 +336,7 @@ ul {
   padding-top: 1.5rem;
 }
 
-#portifolio .wrapper .cards .card footer p {
+#portifolio .wrapper .cards .card div p {
   color: #FFF;
   font-family: Inter;
   font-size: 2rem;
