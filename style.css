@@ -194,6 +194,7 @@ ul {
   font-size: 5rem;
   font-weight: 400;
   padding: 0 0 1rem 0;
+  width: clamp(300px, 50%, 500px);
 }
 
 #home .wrapper .content main p {
@@ -344,18 +345,18 @@ ul {
 }
 
 
-/* ----------------------------------------------------------------------------- PORTIFOLIO ---------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- PORTFOLIO ---------------------------------------------------------------------------------- */
 
-#portifolio .wrapper {
+#portfolio .wrapper {
   padding: calc(var(--nav-heigth) + 2.5rem) 2.5rem 0;
   background-color: #000;
 }
 
-#portifolio .wrapper header {
+#portfolio .wrapper header {
   padding: 2.5rem 0 0 0;
 }
 
-#portifolio .wrapper header h2  {
+#portfolio .wrapper header h2  {
   color: #F4EEF7;
   font-family: Inter;
   font-size: 1.4rem;
@@ -366,7 +367,7 @@ ul {
   padding-bottom: .5rem;
 }
 
-#portifolio .wrapper header h1 {
+#portfolio .wrapper header h1 {
   color: #F4EEF7;
   text-align: center;
   font-family: Playfair Display;
@@ -376,11 +377,11 @@ ul {
   line-height: normal;
 }
 
-#portifolio .wrapper .cards {
+#portfolio .wrapper .cards {
   text-align: center;
 }
 
-#portifolio .wrapper .cards .card {
+#portfolio .wrapper .cards .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -390,15 +391,15 @@ ul {
 }
 
 
-#portifolio .wrapper .cards .card div {
+#portfolio .wrapper .cards .card div {
   display: flex;
   align-items: center;
   gap: 1rem;
   justify-content: center;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 }
 
-#portifolio .wrapper .cards .card div p {
+#portfolio .wrapper .cards .card div p {
   color: #FFF;
   font-family: Inter;
   font-size: 2rem;
@@ -407,7 +408,7 @@ ul {
   line-height: normal;
 }
 
-#portifolio .wrapper .cards .card span {
+#portfolio .wrapper .cards .card span {
   color: #FAFAFA;
   font-family: Inter;
   font-size: 1.4rem;
@@ -418,13 +419,13 @@ ul {
   padding-top: .5rem;
 }
 
-#portifolio .wrapper .button {
+#portfolio .wrapper .button {
   display: flex;
   justify-content: center;
   padding: 4rem 0;
 }
 
-#portifolio .wrapper button {
+#portfolio .wrapper button {
   padding: 0.9rem 3.3rem 1.1rem 3.1rem;
   justify-content: center;
   align-items: center;
@@ -432,7 +433,7 @@ ul {
   border: 1px solid #F4EEF7;
 }
 
-#portifolio .wrapper button {
+#portfolio .wrapper button {
   color: #F4EEF7;
   font-family: Inter;
   font-size: 1.2rem;
@@ -442,7 +443,7 @@ ul {
   text-transform: uppercase;
 }
 
-#portifolio .wrapper button:active {
+#portfolio .wrapper button:active {
   scale: 0.9;
 }
 
