@@ -792,6 +792,31 @@ ul {
     width: 100%;
   }
 
+  #portfolio .wrapper .content header h2 {
+    font-size: 2rem;
+  }
+
+  #portfolio .wrapper .content header h1 {
+    font-size: 4rem;
+    width: 63.5rem;
+    margin: 0 auto;
+  }
+
+  #portfolio .wrapper .cards {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  #portfolio .wrapper .cards .card img {
+    width: 32rem;
+  }
+
+  #portfolio .wrapper .button a button {
+    font-size: 1.8rem;
+    padding: 1.8rem 7.8rem;
+  }
+
 
 
 
