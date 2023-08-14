@@ -621,6 +621,7 @@ ul {
   #home .wrapper  {
     display: flex;
     align-items: center;
+    height: 100vh;
     padding: calc(var(--nav-heigth)) 0 0 10rem;
   }
 
@@ -692,9 +693,28 @@ ul {
   }
 
 
-  .container {
-    width: 100%;
-    height: 100;
+  #home .wrapper .container {
+    position: relative;
+    height: 120vh;
+    width: 100vw;
+    border: 1px solid red;
+    overflow: hidden;
+  }
+
+  #home .wrapper .img-home {
+    position: absolute;
+    top: 118px;
+    left: calc(50% - 250px);
+    z-index: -1;
+    overflow: hidden;
+    border: 2px solid blue;
+    height: 659px;
+  }
+
+  #home .wrapper .img-home img {
+      width: 666px;
+      height: 100vh;
+      border: 1px solid green;
   }
   
 
