@@ -18,9 +18,17 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-size: 1.6rem;
   background-color: #F4EEF7;
+
+  overflow: overlay;
 }
 
 button {
@@ -103,6 +111,10 @@ ul {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.nav-desktop {
+  display: none;
 }
 
 .menu-navigation {
@@ -202,6 +214,7 @@ ul {
   font-family: Inter;
   font-size: 1.4rem;
   font-weight: 200;
+  width: clamp(300px, 50%, 500px);
 }
 
 #home .wrapper .content .button {
@@ -556,4 +569,142 @@ ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+
+  #navigation .navigation-mobile .logo h1,
+  #navigation .navigation-mobile .logo span {
+    font-size: 3rem;
+  }
+
+  #navigation .navigation-mobile .btns-menu {
+    display: none;
+  }
+
+  #navigation .navigation-mobile {
+    padding: 2.4rem 10rem;
+  }
+
+  #navigation .navigation-mobile .nav-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #navigation .navigation-mobile .nav-desktop ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  #navigation .navigation-mobile .nav-desktop ul li a {
+    text-align: center;
+    font-family: Inter;
+    color: #F4EEF7;
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 0 .5rem;
+  }
+
+  #navigation .navigation-mobile .nav-desktop ul li a:hover {
+    font-weight: 600;
+  }
+
+
+
+  /* --------------------------------------------------------------------------- HOME ----------------------------------------------------------------------------- */
+
+  #home .wrapper  {
+    display: flex;
+    align-items: center;
+    padding: calc(var(--nav-heigth)) 0 0 10rem;
+  }
+
+  #home .wrapper .content {
+    padding: 0;
+    width: clamp(791px, 50%, 700px); 
+  }
+
+  #home .wrapper .content header p {
+    color: #494542;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+  }
+
+  #home .wrapper .content main h1 {
+    font-size: 8rem;
+    width: clamp(503px, 50%, 700px);
+  }
+
+  #home .wrapper .content main p {
+    font-size: 1.8rem;
+    width: clamp(494px, 50%, 700px);
+  }
+
+  #home .wrapper .content .button {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #home .wrapper .content .button button {
+    padding: 1.5rem 4rem;
+    font-size: 1.8rem;
+    background-color: transparent;
+    color: #494542;
+  }
+  
+  #home .wrapper .content .button a{
+    display: block;
+    border: 1px solid #494542;
+    position: relative;
+    transition: all .50s;
+  }
+  
+  #home .wrapper .content .button a button{
+    position: relative;
+    z-index: 2;
+  }
+  
+  #home .wrapper .content .button a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #494542;
+    transition: all .50s;
+  }
+  
+  #home .wrapper .content .button button:hover{
+    color: #fff;
+  }
+  
+  #home .wrapper .content .button a:hover:after{
+    width: 100%;
+  }
+
+
+  .container {
+    width: 100%;
+    height: 100;
+  }
+  
+
+
+
+
+
+
+
+
+
+
 }
