@@ -670,7 +670,7 @@ ul {
   
   #home .wrapper .content .button a button{
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
   
   #home .wrapper .content .button a:after{
@@ -770,7 +770,7 @@ ul {
   
   #services .wrapper .button a button{
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
   
   #services .wrapper .button a:after{
