@@ -697,26 +697,100 @@ ul {
     position: relative;
     height: 120vh;
     width: 100vw;
-    border: 1px solid red;
     overflow: hidden;
   }
 
   #home .wrapper .img-home {
     position: absolute;
     top: 118px;
-    left: calc(50% - 250px);
+    left: calc(50% - 230px);
     z-index: -1;
     overflow: hidden;
-    border: 2px solid blue;
     height: 659px;
   }
 
   #home .wrapper .img-home img {
       width: 666px;
-      height: 100vh;
-      border: 1px solid green;
+      height: 100vh;      
+  }
+
+  #services .wrapper {
+    padding-top: 3rem;
   }
   
+  #services .wrapper .content header h2 {
+    font-size: 2rem;
+  }
+
+  #services .wrapper .content header h1 {
+    font-size: 4rem;
+    width: 63rem;
+    margin: 0 auto;
+  }
+
+  #services .wrapper .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  #services .wrapper .cards .card {
+    
+    padding: 6rem 4rem;
+  }
+
+  #services .wrapper .cards .card h1 {
+    font-size: 4rem;
+  }
+
+  #services .wrapper .cards .card p {
+    font-size: 1.6rem;
+  }
+
+  #services .wrapper .button {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8.3rem;
+  }
+
+  #services .wrapper .button button {
+    padding: 1.5rem 4rem;
+    font-size: 1.8rem;
+    background-color: transparent;
+    color: #494542;
+  }
+  
+  #services .wrapper .button a{
+    display: block;
+    border: 1px solid #494542;
+    position: relative;
+    transition: all .50s;
+  }
+  
+  #services .wrapper .button a button{
+    position: relative;
+    z-index: 2;
+  }
+  
+  #services .wrapper .button a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #494542;
+    transition: all .50s;
+  }
+  
+  #services .wrapper .button button:hover{
+    color: #fff;
+  }
+  
+  #services .wrapper .button a:hover:after{
+    width: 100%;
+  }
 
 
 
