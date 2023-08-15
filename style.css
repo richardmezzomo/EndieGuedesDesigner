@@ -695,14 +695,14 @@ ul {
 
   #home .wrapper .container {
     position: relative;
-    height: 100%;
+    height: 935px;
     width: 100vw;
     overflow: hidden;
   }
 
   #home .wrapper .img-home {
     position: absolute;
-    top: 25px;
+    top: 160px;
     left: calc(50% - 260px);
     z-index: -1;
     overflow: hidden;
