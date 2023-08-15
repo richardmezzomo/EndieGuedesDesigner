@@ -3,7 +3,7 @@
   src: url("./assets/fonts/shopia.ttf") format('truetype');
 }
 
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,13 +27,10 @@ body {
 body {
   font-size: 1.6rem;
   background-color: #F4EEF7;
-
-  overflow: overlay;
 }
 
 button {
   border: none;
-  outline: none;
   cursor: pointer;
   background-color: transparent;
 }
@@ -353,11 +350,6 @@ ul {
   text-transform: uppercase;
 }
 
-#services .wrapper button:active {
-  scale: 0.9;
-}
-
-
 /* ----------------------------------------------------------------------------- PORTFOLIO ---------------------------------------------------------------------------------- */
 
 #portfolio .wrapper {
@@ -454,10 +446,6 @@ ul {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-}
-
-#portfolio .wrapper button:active {
-  scale: 0.9;
 }
 
 /* ----------------------------------------------------------------------------- ABOUT ---------------------------------------------------------------------------------- */
