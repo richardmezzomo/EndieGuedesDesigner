@@ -502,7 +502,6 @@ ul {
   font-style: normal;
   font-weight: 200;
   line-height: normal;
-  max-width: 32.5rem;
 }
 
 #about .wrapper .img-sobre-mim {
@@ -510,6 +509,7 @@ ul {
   justify-content: center;
   padding: .2rem 0 4rem;
 }
+
 
 /* ----------------------------------------------------------------------------- CONTACT ---------------------------------------------------------------------------------- */
 
@@ -569,6 +569,10 @@ ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+#footer .wrapper .social-links span {
+  display: none;
 }
 
 @media (min-width: 1024px) {
@@ -715,6 +719,7 @@ ul {
   }
 
   #services .wrapper {
+    margin-top: 15rem;
     padding-top: 3rem;
   }
   
@@ -733,6 +738,7 @@ ul {
     flex-direction: row;
     gap: 2rem;
     justify-content: center;
+    padding: 0 10rem;
   }
 
   #services .wrapper .cards .card {
@@ -751,7 +757,7 @@ ul {
   #services .wrapper .button {
     display: flex;
     justify-content: flex-end;
-    padding-right: 8.3rem;
+    padding-right: 12rem;
   }
 
   #services .wrapper .button button {
@@ -792,6 +798,10 @@ ul {
     width: 100%;
   }
 
+  #portfolio .wrapper {
+    padding: calc(var(--nav-heigth)) 0 0;
+  }
+
   #portfolio .wrapper .content header h2 {
     font-size: 2rem;
   }
@@ -804,8 +814,9 @@ ul {
 
   #portfolio .wrapper .cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 6rem;
+    padding: 0 10rem;
   }
 
   #portfolio .wrapper .cards .card img {
@@ -819,16 +830,11 @@ ul {
 
   #about .wrapper {
     padding: calc(var(--nav-heigth) + 7rem) 10rem 0;
-    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-  }
-
-  #about .wrapper .container {
-    width: 100%;
-    padding-top: 8.3rem;
+    gap: 8rem
   }
 
   #about .wrapper .container  header h2 {
@@ -840,14 +846,50 @@ ul {
     font-size: 4rem;
   }
 
-  #about .wrapper  main  {
-    display: inline-flex;
-    width: 100%;
-    
-  }
-
   #about .wrapper .container main p {
     font-size: 2.5rem;
+  }
+
+  #footer .wrapper header h2 {
+    display: none;
+  }
+
+  #footer .wrapper header h1 {
+    font-size: 4rem;
+  }
+
+  #footer .wrapper a button {
+    font-size: 2rem;
+    padding: 1.4rem 2.8rem;
+    display: flex;
+    align-items: center;
+  }
+
+  #footer .wrapper .social-links {
+    display: flex;
+    gap: 4rem;
+  }
+
+  #footer .wrapper .social-links a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    color: #F4EEF7;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  #footer .wrapper .social-links span {
+    display: flex;
+  }
+
+  #footer .wrapper .social-links a button .svg {
+    width: 24px;
+    height: 24px;
   }
 
 
