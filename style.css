@@ -817,6 +817,43 @@ ul {
     padding: 1.8rem 7.8rem;
   }
 
+  #about .wrapper {
+    padding-top: calc(var(--nav-heigth) + 5rem);
+    height: 100vh;
+  }
+
+  #about .wrapper header h2 {
+    font-size: 2rem;
+  }
+
+  #about .wrapper header h1 {
+    font-size: 4rem;
+  }  
+
+  #about .wrapper .content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 10rem;
+    padding: 10rem;
+  }
+
+  #about .wrapper .content main {
+    min-width: 40rem;
+  }
+
+  #about .wrapper .content .img-sobre-mim img {
+    width: 40rem;
+    height: 55rem;
+  }
+
+  #about .wrapper main p {
+    font-size: 2.5rem;
+    max-width: 65rem;
+  }
+
+  
+
 
 
 
