@@ -730,7 +730,7 @@ ul {
   }
 
   #services .wrapper .cards .card {
-    
+    width: 100%;
     padding: 6rem 4rem;
   }
 
@@ -808,7 +808,7 @@ ul {
   }
 
   #portfolio .wrapper .cards .card img {
-    width: 32rem;
+    width: 100%;
   }
 
   #portfolio .wrapper .button a button {
