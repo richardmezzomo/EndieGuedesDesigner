@@ -1,6 +1,6 @@
 # Endie Guedes Designer
 
-![Endie Guedes Designer Logo](link_para_o_seu_logo.png)
+![EndieGuedes Logo](https://i.imgur.com/Wnzpury.png)
 
 Bem-vindo ao repositório do site da UI/UX Designer Endie Guedes! Este site foi criado usando HTML, CSS e JavaScript, com foco em responsividade, seguindo a abordagem "Mobile First" e incluindo transições de botões para uma experiência de usuário suave.
 
